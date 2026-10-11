@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* Topbar */
+.topbar {
+    height: 60px;
+    background: #009688; /* teal */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.topbar .welcome {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Layout */
+.wrapper {
+    display: flex;
+    min-height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #1f2933; /* dark sidebar */
+    color: #cfd8dc;
+    padding: 20px 0;
+}
+
+.sidebar h3 {
+    padding: 0 20px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #90a4ae;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #cfd8dc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background: #263340;
+    color: #ffffff;
+}
+
+.menu li a.active {
+    background: #009688;
+    color: white;
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Summary Boxes */
+.summary {
+    display: flex;
+    gap: 20px;
+}
+
+.summary-box {
+    background: white;
+    flex: 1;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.summary-box .title {
+    font-size: 14px;
+    color: #607d8b;
+    margin-bottom: 8px;
+}
+
+.summary-box .number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #009688;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 20px;
+}
+
+.card-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Table */
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.details-table td {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.details-table .label {
+    font-weight: bold;
+    color: #555;
+    width: 120px;
+}
+
+.details-table .value {
+    color: #333;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #009688;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00796b;
+}
